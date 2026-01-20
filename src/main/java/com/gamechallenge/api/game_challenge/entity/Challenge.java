@@ -20,10 +20,10 @@ public class Challenge {
 	private int xp;
 	
 	@Column(nullable = false)
-	@Enumerated
+	@Enumerated(EnumType.STRING)
 	private ChallengeDifficulty difficulty;
 	
 	@Column(nullable = false)
-	@Enumerated
+	@Enumerated(EnumType.STRING)
 	private ChallengeStatus status;
 }

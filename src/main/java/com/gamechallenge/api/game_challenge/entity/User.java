@@ -19,7 +19,7 @@ public class User {
 	private String password;
 	
 	@Column(nullable = false)
-	@Enumerated
+	@Enumerated(EnumType.STRING)
 	private UserRole role;
 	
 	@Column(nullable = false)
@@ -29,6 +29,6 @@ public class User {
 	private int level;
 	
 	@Column(nullable = false)
-	@Enumerated
+	@Enumerated(EnumType.STRING)
 	private UserStatus status;
 }
