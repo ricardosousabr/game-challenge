@@ -1,7 +1,11 @@
 package com.gamechallenge.api.game_challenge.entity;
 
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
 
+@Getter
+@Setter
 @Entity
 @Table(name = "challenge")
 public class Challenge {
