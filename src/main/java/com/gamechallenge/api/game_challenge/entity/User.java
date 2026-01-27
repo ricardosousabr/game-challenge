@@ -1,7 +1,11 @@
 package com.gamechallenge.api.game_challenge.entity;
 
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
 
+@Getter
+@Setter
 @Entity
 @Table(name = "user")
 public class User {
@@ -31,4 +35,15 @@ public class User {
 	@Column(nullable = false)
 	@Enumerated(EnumType.STRING)
 	private UserStatus status;
+	
+	public User() {
+	}
+	
+	
+	public User(String userName, String email, String password, UserRole role) {
+		this.username = userName;
+		this.email = email.toLowerCase();
+		this.password = password;
+		this.role = role;
+	}
 }
