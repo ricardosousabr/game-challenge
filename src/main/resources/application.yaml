@@ -20,3 +20,8 @@ spring:
       properties:
         hibernate:
           format_sql: true
+
+    api:
+      security:
+        token:
+          secret: ${JWT_SECRET:my-secret-key}
