@@ -35,4 +35,15 @@ public class User {
 	@Column(nullable = false)
 	@Enumerated(EnumType.STRING)
 	private UserStatus status;
+	
+	public User() {
+	}
+	
+	
+	public User(String userName, String email, String password, UserRole role) {
+		this.username = userName;
+		this.email = email.toLowerCase();
+		this.password = password;
+		this.role = role;
+	}
 }
