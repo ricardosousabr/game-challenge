@@ -1,9 +1,12 @@
 package com.gamechallenge.api.game_challenge.service;
 
 import com.gamechallenge.api.game_challenge.entity.*;
+import org.springframework.stereotype.Service;
 
 import java.util.Date;
+import java.util.Optional;
 
+@Service
 public class LevelService {
 	
 	public void completedChallenge(Long userId, Long userChallengeId) {
