@@ -18,7 +18,7 @@ public class UserHistoryController {
 	@Autowired
 	UserHistoryService userHistoryService;
 	
-	@GetMapping("/{userId/history}")
+	@GetMapping("/{userId}/history")
 	public ResponseEntity<List<ChallengeHistory>> getHistory(@PathVariable Long userId) {
 		List<ChallengeHistory> history = userHistoryService.userHistory(userId);
 		
